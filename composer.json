@@ -1,0 +1,21 @@
+{
+    "name": "synsei/di-container",
+    "description": "Simple di container",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0",
+        "psr/container": "^2.0.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Synsei\\DiContainer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Synner"
+        }
+    ],
+    "minimum-stability": "dev"
+}
