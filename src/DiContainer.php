@@ -8,9 +8,14 @@ class DiContainer implements ContainerInterface
 {
     private array $dependencies;
 
-    public function __construct($configPath)
+    public function __construct(array $dependencies)
     {
-        $this->dependencies = require $configPath;
+        $this->dependencies = [];
+        foreach ($dependencies as $class => $factory) {
+            if (is_string($class) && is_callable($factory)) {
+                $this->dependencies[$class] = $factory;
+            }
+        }
     }
 
     public function get($class)
