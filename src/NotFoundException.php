@@ -2,9 +2,9 @@
 
 namespace Synsei\DiContainer;
 
-use Psr/Container/NotFoundExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
-class NotFoundException extends Throw  implements NotFoundExceptionInterface
+class NotFoundException extends \Exception implements NotFoundExceptionInterface
 {
 }
 

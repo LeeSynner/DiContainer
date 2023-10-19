@@ -2,7 +2,7 @@
 
 namespace Synsei\DiContainer;
 
-use Psr/Container/ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class DiContainer implements ContainerInterface
 {
